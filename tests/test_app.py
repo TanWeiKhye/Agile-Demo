@@ -71,7 +71,7 @@ def test_mark_done():
     Scenario: Mark an item as done
       Given an item with ID 3 exists
       When I PATCH /items/3/done
-      Then the item is marked as done
+      Then the item is marked as Done
     """
     item = {"id": 3, "title": "Finish demo"}
     client.post("/items", json=item)
